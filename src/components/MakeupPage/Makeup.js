@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './Makeup.css'
 
 const MakeUp = () => {
 
@@ -13,26 +14,70 @@ const MakeUp = () => {
         })
     })
 
+    const deleteProduct = async (id) => {
+      await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline/${id}`, {
+         method: 'DELETE',
+      }).then((response) => {
+         if (response.status === 200) {
+            setMakeup(
+               makeup.filter((product) => {
+                  return product.id !== id;
+               })
+            );
+         } else {
+            return;
+         }
+      });
+      };
+
     return (
-        <div className="posts-container">
+<section>
+    <div class="heading">
+        {/* <h1>Maybelline Products</h1> */}
+       <div className="container-fluid mx-2">
+         <button className="btn btn-warning w-100 mb-4">All</button>
+         <button>Foundation</button>
+         <button>LIpstick</button>
+         <button>Bronzer</button>
+         <button>Blush</button>
+         <button>Eyeshadow</button>
+         <button>Eyeliner</button>
+         <button>Nail Polish</button>
+         <button>Mascara</button>
+         </div>
+    </div>
+    <div class="container">
+     
         {makeup.map((product) => {
            return (
-              <div className="post-card" key={product.id}>
-                 <h2 className="post-title">{product.name}</h2>
+            
+     <div class="box" key={product.id}>
+      
+      <a href={product.product_link}>
                  <img src={product.image_link} />
-                 <h2 className="post-title">${product.price}</h2>
-                 <h2 className="post-title">{product.product_type}</h2>
-                 <h2 className="post-title">rating {product.rating}</h2>
-                 <a href={product.product_link} >Product link</a>
 
+      </a>
+        <h2>{product.name}</h2>
+        <h2>{product.product_type}</h2>
+        <span>${product.price}</span>
+        <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="options">
+            <a href="#">Favorite</a>
+            <a href="#" onClick={() => deleteProduct(product.id)}>Delete</a>
+        </div>
+    </div>
 
-                 <div className="button">
-                 <div className="delete-btn">Delete</div>
-                 </div>
-              </div>
+      
            );
         })}
-     </div>    )
+  </div>
+</section>      )
 }
  
 export default MakeUp;
