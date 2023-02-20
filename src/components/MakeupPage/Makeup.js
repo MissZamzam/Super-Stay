@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Navbar from "../Navbar/Navbar"
 import './Makeup.css'
 
 const Makeup = () => {
@@ -12,21 +13,35 @@ const Makeup = () => {
             setMakeup(data)
         })
     })
+
+
+   //  const [category, setCategory] =useState('')
+
+const filterResult = (categoryItem) =>{
+const updatedItem = product_type.filter((currentData)=>{
+   return currentData.product_type === categoryItem;
+});
+setMakeup(updatedItem)
+}
+
+
+
     return (  
 <>
-<h1 className="text-center text-info">Maybelline Collections</h1>
+<Navbar />
+{/* <h1 className="text-center">Maybelline Collections</h1> */}
 <div className="container-fluid mx-2">
     <div className="row mt-5 mx-2">
         <div className="col-md-3">
-            <button className="btn btn-warning w-100 mb-4">All</button>           
-            <button className="btn btn-warning w-100 mb-4">Foundation</button>
-            <button className="btn btn-warning w-100 mb-4">Lipstick</button>
-            <button className="btn btn-warning w-100 mb-4">Bronzer</button>
-            <button className="btn btn-warning w-100 mb-4">Blush</button>
-            <button className="btn btn-warning w-100 mb-4">Eyeshadow</button>
-            <button className="btn btn-warning w-100 mb-4">Eyeliner</button>
-            <button className="btn btn-warning w-100 mb-4">Nail Polish</button>
-            <button className="btn btn-warning w-100 ">Mascara</button>
+            <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('All')}>All</button>           
+            <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('Foundation')}>Foundation</button>
+            <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('Lipstick')}>Lipstick</button>
+            <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('Lipstick')}>Bronzer</button>
+            <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('Lipstick')}>Blush</button>
+            <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('Lipstick')}>Eyeshadow</button>
+            <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('Lipstick')}>Eyeliner</button>
+            <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('Lipstick')}>Nail Polish</button>
+            <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('Lipstick')}>Mascara</button>
         </div>
         <div className="col-md-9">
         <section>
@@ -39,24 +54,19 @@ const Makeup = () => {
    <div class="container">
     
        {makeup.map((product) => {
+         const {id, name, product_link, product_type, price, image_link} = product
           return (
            
-    <div class="box" key={product.id}>
+    <div class="box" key={id}>
      
-     <a href={product.product_link}>
-                <img src={product.image_link} />
+     <a href={product_link}>
+      <img src={image_link} />
 
      </a>
-       <h2>{product.name}</h2>
-       <h2>{product.product_type}</h2>
-       <span>${product.price}</span>
-       <div class="rate">
-           <i class="filled fas fa-star"></i>
-           <i class="filled fas fa-star"></i>
-           <i class="filled fas fa-star"></i>
-           <i class="filled fas fa-star"></i>
-           <i class="fa-regular fa-star"></i>
-       </div>
+       <h2>{name}</h2>
+       <h2>{product_type}</h2>
+       <span>${price}</span>
+      
        <div class="options">
            <a href="#">Favorite</a>
            <a href="#">Delete</a>
