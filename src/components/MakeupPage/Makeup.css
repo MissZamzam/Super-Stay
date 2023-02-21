@@ -145,3 +145,9 @@ border-radius: 5px;
 border: navajowhite;
 cursor: pointer;
 }
+.select{
+float: left;  
+ width: 150%;
+    border: 3px solid green;
+    padding: 10px;
+}
