@@ -114,21 +114,22 @@ section {
     margin-bottom: 25px;
 }
 
-.box .options a {
+.box .options button {
     color: white;
-    background-color: rgb(2, 3, 2);
+    background-color: rgb(199, 173, 24);
     display: inline-block;
-    padding: 14px 25px;
+    padding: 14px 35px;
     text-decoration: none;
     font-weight: 600;
     font-size: 12px;
     border-radius: 50px;
     margin: 10px;
+    border: none;
 
 }
 
-.box .options a:hover {
-    background-color: #f0ede5;
+.box .options button:hover {
+    background-color: #a78424;
     color: black;
 }
 h2{

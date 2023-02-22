@@ -3,10 +3,21 @@ import Navbar from "../Navbar/Navbar"
 import './Makeup.css'
 import { API_URL } from "../API"
 import Footer from "../Footer/Footer"
+import { useAppContext } from "../context/appContext"
 
 const Makeup = () => {
     const [makeup, setMakeup] = useState([])
     const [product_type, setProduct_type] = useState(API_URL)
+
+// add to favorite
+const {favorites, addToFavorites,removeFromFavorites} = useAppContext()
+console.log('favorites are ', favorites)
+
+
+const favoritesChecker = (id) => {
+    const boolean = favorites.some((makeup) => makeup.id === id);
+    return boolean;
+}
 
 
     useEffect(()=>{
@@ -19,8 +30,8 @@ const Makeup = () => {
         })
     })
 
-
-
+   
+//filter method
 const filterResult = (categoryItem) =>{
 const updatedItem = product_type.filter((currentData)=>{
    return currentData.product_type === categoryItem;
@@ -70,11 +81,24 @@ setMakeup(updatedItem)
        <h2>{name}</h2>
        <h2>{product_type}</h2>
        <span>${price}</span>
-      
-       <div className="options">
-           <a href="#">Favorite</a>
-           <a href="#">Delete</a>
+
+            {/* we will remove it if its already inside our favorite array */}
+       {favoritesChecker(makeup.id) ? 
+
+        (
+        <div className="options">
+           <button onClick={()=> removeFromFavorites(makeup.id)}>Remove from Favorite</button>
        </div>
+        ) :
+        (
+        <div className="options">
+           <button onClick={()=> addToFavorites(makeup)}>Add to Favorite</button>
+       </div>
+        )
+       
+       }
+      
+       
    </div>
 
      
