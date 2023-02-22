@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react"
 import Navbar from "../Navbar/Navbar"
 import './Makeup.css'
+import { API_URL } from "../API"
+import Footer from "../Footer/Footer"
 
 const Makeup = () => {
     const [makeup, setMakeup] = useState([])
-    const [product_type, setProduct_type] = useState([])
+    const [product_type, setProduct_type] = useState(API_URL)
 
 
     useEffect(()=>{
-        fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
+        fetch(API_URL)
         .then((response) => response.json())
         .then((data) =>{
             console.log(data)
@@ -53,7 +55,7 @@ setMakeup(updatedItem)
      
    </div> */}
    
-   <div class="container">
+   <div className="container">
     
        {makeup.map((product) => {
          const {id, name, product_link, product_type, price, image_link} = product
@@ -69,7 +71,7 @@ setMakeup(updatedItem)
        <h2>{product_type}</h2>
        <span>${price}</span>
       
-       <div class="options">
+       <div className="options">
            <a href="#">Favorite</a>
            <a href="#">Delete</a>
        </div>
@@ -85,7 +87,7 @@ setMakeup(updatedItem)
 </div>
 
 
-
+<Footer />
 </>
 
 
