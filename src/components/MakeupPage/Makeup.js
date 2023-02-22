@@ -18,7 +18,6 @@ const Makeup = () => {
     })
 
 
-   //  const [category, setCategory] =useState('')
 
 const filterResult = (categoryItem) =>{
 const updatedItem = product_type.filter((currentData)=>{
