@@ -14,11 +14,15 @@ const {favorites, addToFavorites,removeFromFavorites} = useAppContext()
 console.log('favorites are ', favorites)
 
 
-const favoritesChecker = (id) => {
+// const favoritesChecker = (id) => {
   
-    const boolean = favorites.filter((some) => makeup.id === id)
-    return boolean
+//     const boolean = favorites.filter((some) => makeup.id === id)
+//     return boolean
 
+// }
+const favoritesChecker = (id) => {
+    const boolean = favorites.some((makeup) => makeup.id === id)
+    return boolean
 }
 
     useEffect(()=>{
@@ -82,19 +86,28 @@ setMakeup(updatedItem)
        <h2>{name}</h2>
        <h2>{product_type}</h2>
        <span>${price}</span>
+<div>
 
-            {/* we will remove it if its already inside our favorite array */}
-            
-       {favoritesChecker(makeup.id) ? 
+     {/* we will remove it if its already inside our favorite array */}
 
-        (
-           <button onClick={()=> removeFromFavorites(makeup.id)}>Remove from Favorite</button>
-        ) :
-        (
-           <button onClick={()=> addToFavorites(makeup)}>Add to Favorite</button>
-        )
+            {favoritesChecker(product.id) ? ( 
+             <button onClick={()=> removeFromFavorites(product.id)}>
+              Remove from Favorite
+             </button>
+ 
+            )  : (
+                <button onClick={()=> addToFavorites(product)}>
+                Add to Favorite
+                </button>
+
+            )}
+        
+        
+        
        
-       }
+</div>
+           
+       
       
        
    </div>
