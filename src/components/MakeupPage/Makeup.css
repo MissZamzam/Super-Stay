@@ -114,7 +114,7 @@ section {
     margin-bottom: 25px;
 }
 
-.box .options button {
+.box .options a {
     color: white;
     background-color: rgb(199, 173, 24);
     display: inline-block;
@@ -124,11 +124,10 @@ section {
     font-size: 12px;
     border-radius: 50px;
     margin: 10px;
-    border: none;
 
 }
 
-.box .options button:hover {
+.box .options a:hover {
     background-color: #a78424;
     color: black;
 }

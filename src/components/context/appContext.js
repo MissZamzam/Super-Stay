@@ -4,7 +4,7 @@ import { useState } from "react";
 const AppContext = createContext(null)
 
 export const useAppContext = () =>{
-    const context =useContext(AppContext)
+    const context = useContext(AppContext)
 
     if (context === undefined){
         throw new Error('Appcontext must be within appContextProvider!')
@@ -17,7 +17,7 @@ const AppContextProvider = ({children}) => {
     const [favorites, setFavorites] = useState([])
 
 
-    const addToFavorites = (makeup) => {
+ const addToFavorites = (makeup) => {
         const oldFavorites = [...favorites];
 
         const newFavorites = oldFavorites.concat(makeup)

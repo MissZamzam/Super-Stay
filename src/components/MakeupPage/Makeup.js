@@ -15,10 +15,11 @@ console.log('favorites are ', favorites)
 
 
 const favoritesChecker = (id) => {
-    const boolean = favorites.some((makeup) => makeup.id === id);
-    return boolean;
-}
+  
+    const boolean = favorites.filter((some) => makeup.id === id)
+    return boolean
 
+}
 
     useEffect(()=>{
         fetch(API_URL)
@@ -83,17 +84,14 @@ setMakeup(updatedItem)
        <span>${price}</span>
 
             {/* we will remove it if its already inside our favorite array */}
+            
        {favoritesChecker(makeup.id) ? 
 
         (
-        <div className="options">
            <button onClick={()=> removeFromFavorites(makeup.id)}>Remove from Favorite</button>
-       </div>
         ) :
         (
-        <div className="options">
            <button onClick={()=> addToFavorites(makeup)}>Add to Favorite</button>
-       </div>
         )
        
        }
