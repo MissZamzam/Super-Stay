@@ -1,0 +1,70 @@
+import React from "react"
+import { useAppContext } from "../context/appContext"
+
+const Favorites = () => {
+
+// copied from makeup.js
+const {favorites, addToFavorites,removeFromFavorites} = useAppContext()
+console.log('favorites are ', favorites)
+
+
+
+const favoritesChecker = (id) => {
+    const boolean = favorites.some((product) => product.id === id)
+    return boolean
+}
+
+    return ( 
+        <div>
+                    <div className="favorite">
+
+            {favorites.length > 0 ? favorites.map((product) => {
+         const {id, name, product_link, price, image_link} = product
+          return (
+           
+    <div class="box" key={id}>
+     
+     <a href={product_link}>
+      <img src={image_link} />
+
+     </a>
+       <h2>{name}</h2>
+       {/* <h2>{product_type}</h2> */}
+       <span>${price}</span>
+<div className="options">
+
+     {/* we will remove it if its already inside our favorite array */}
+
+            {favoritesChecker(product.id) ? ( 
+             <button onClick={()=> removeFromFavorites(product.id)}>
+              Remove from Favorites
+             </button>
+ 
+            )  : (
+                <button onClick={()=> addToFavorites(product)}>
+                Add to Favorites
+                </button>
+
+            )}
+        
+        
+        
+       
+</div>
+           
+       
+      
+       
+   </div>
+
+     
+          );
+       }):<h1>You dont have any favorites yet</h1>}
+                    </div>
+                    
+
+        </div>
+     );
+}
+ 
+export default Favorites;

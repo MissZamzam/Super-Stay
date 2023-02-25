@@ -14,12 +14,7 @@ const {favorites, addToFavorites,removeFromFavorites} = useAppContext()
 console.log('favorites are ', favorites)
 
 
-// const favoritesChecker = (id) => {
-  
-//     const boolean = favorites.filter((some) => makeup.id === id)
-//     return boolean
 
-// }
 const favoritesChecker = (id) => {
     const boolean = favorites.some((product) => product.id === id)
     return boolean
@@ -48,7 +43,6 @@ setMakeup(updatedItem)
 
     return (  
 <>
-<Navbar />
 {/* <h1 className="text-center">Maybelline Collections</h1> */}
 <div className="container-fluid mx-2">
     <div className="row mt-5 mx-2">
@@ -63,6 +57,7 @@ setMakeup(updatedItem)
             <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('nail_polish')}>Nail Polish</button>
             <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('mascara')}>Mascara</button>
         </div>
+        
         <div className="col-md-9">
         <section>
    
@@ -92,12 +87,12 @@ setMakeup(updatedItem)
 
             {favoritesChecker(product.id) ? ( 
              <button onClick={()=> removeFromFavorites(product.id)}>
-              Remove from Favorite
+              Remove from Favorites
              </button>
  
             )  : (
                 <button onClick={()=> addToFavorites(product)}>
-                Add to Favorite
+                Add to Favorites
                 </button>
 
             )}
