@@ -21,7 +21,7 @@ console.log('favorites are ', favorites)
 
 // }
 const favoritesChecker = (id) => {
-    const boolean = favorites.some((makeup) => makeup.id === id)
+    const boolean = favorites.some((product) => product.id === id)
     return boolean
 }
 
@@ -29,7 +29,7 @@ const favoritesChecker = (id) => {
         fetch(API_URL)
         .then((response) => response.json())
         .then((data) =>{
-            console.log(data)
+            // console.log(data)
             setMakeup(data)
             setProduct_type(data)
         })
@@ -74,7 +74,7 @@ setMakeup(updatedItem)
    <div className="container">
     
        {makeup.map((product) => {
-         const {id, name, product_link, product_type, price, image_link} = product
+         const {id, name, product_link, price, image_link} = product
           return (
            
     <div class="box" key={id}>
@@ -84,9 +84,9 @@ setMakeup(updatedItem)
 
      </a>
        <h2>{name}</h2>
-       <h2>{product_type}</h2>
+       {/* <h2>{product_type}</h2> */}
        <span>${price}</span>
-<div>
+<div className="options">
 
      {/* we will remove it if its already inside our favorite array */}
 

@@ -3,6 +3,8 @@ import { useState } from "react";
 
 const AppContext = createContext(null)
 
+// good practice
+// hook that return context
 export const useAppContext = () =>{
     const context = useContext(AppContext)
 
@@ -17,10 +19,10 @@ const AppContextProvider = ({children}) => {
     const [favorites, setFavorites] = useState([])
 
 
- const addToFavorites = (makeup) => {
+ const addToFavorites = (product) => {
         const oldFavorites = [...favorites];
 
-        const newFavorites = oldFavorites.concat(makeup)
+        const newFavorites = oldFavorites.concat(product)
 
         setFavorites(newFavorites);
     }
@@ -29,7 +31,7 @@ const removeFromFavorites = (id) => {
 
         const oldFavorites = [...favorites];
 
-        const newFavorites = oldFavorites.filter((makeup) => makeup.id !== id)
+        const newFavorites = oldFavorites.filter((product) => product.id !== id)
 
         setFavorites(newFavorites)
 
