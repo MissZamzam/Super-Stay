@@ -107,7 +107,7 @@ setMakeup(updatedItem)
             
             {/* modal button */}
 
-            <Modal />
+            <Modal description={product.description} />
         </div>
         
         {/* <div className="pop_up_container">
