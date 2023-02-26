@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Favorites from './components/Favorites/Favorites';
 import MakeupDetails from './components/Modal/Modal';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (

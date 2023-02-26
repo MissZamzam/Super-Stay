@@ -21,7 +21,7 @@ const favoritesChecker = (id) => {
     return boolean
 }
 
-// modal function
+// modal function for description
 const changeContent = (product) => {
     setPopup([product])
 
@@ -103,24 +103,33 @@ setMakeup(updatedItem)
                 </button>
 
             )}
+
+            
             {/* modal button */}
-            <button onClick={()=>changeContent(product)}>product description</button>
+
+            <Modal />
         </div>
-        <div className="pop_up">
-            {popup.map((pop) => {
-                return(
-                    <div className="pop_container">
-                        <div className="pop_header">
-                            <button>X</button>
+        
+        {/* <div className="pop_up_container">
+            <div className="pop_up_body"> 
+              <div className="pop_up_header">
+                <button>X</button>
+            </div>
+            <div className="pop_up_content">
+                {popup.map((pop)=>{
+                    return(
+                        <div className="pop_card">
+                            <img src={product.image_link} />
+                            <p>{product.description}</p>
                         </div>
-                        <div className="pop_content">{product.description}</div>
-
-                    </div>
-                )
-            })}
-        </div>
-
+                    )
+                })}
+            </div>
+            </div>
+          
            
+        </div> */}
+
        
       
        
