@@ -4,27 +4,34 @@ import './Makeup.css'
 import { API_URL } from "../API"
 import Footer from "../Footer/Footer"
 import { useAppContext } from "../context/appContext"
+import Modal from "../Modal/Modal"
 
 const Makeup = () => {
     const [makeup, setMakeup] = useState([])
     const [product_type, setProduct_type] = useState(API_URL)
+    const [popup, setPopup] = useState([])
 
 // add to favorite
 const {favorites, addToFavorites,removeFromFavorites} = useAppContext()
 console.log('favorites are ', favorites)
 
 
-
 const favoritesChecker = (id) => {
-    const boolean = favorites.some((product) => product.id === id)
+    const boolean = favorites.some((makeup) => makeup.id === id)
     return boolean
+}
+
+// modal function
+const changeContent = (product) => {
+    setPopup([product])
+
 }
 
     useEffect(()=>{
         fetch(API_URL)
         .then((response) => response.json())
         .then((data) =>{
-            // console.log(data)
+            console.log(data)
             setMakeup(data)
             setProduct_type(data)
         })
@@ -57,7 +64,6 @@ setMakeup(updatedItem)
             <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('nail_polish')}>Nail Polish</button>
             <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('mascara')}>Mascara</button>
         </div>
-        
         <div className="col-md-9">
         <section>
    
@@ -69,7 +75,7 @@ setMakeup(updatedItem)
    <div className="container">
     
        {makeup.map((product) => {
-         const {id, name, product_link, price, image_link} = product
+         const {id, name, product_link, product_type, price, image_link} = product
           return (
            
     <div class="box" key={id}>
@@ -77,9 +83,10 @@ setMakeup(updatedItem)
      <a href={product_link}>
       <img src={image_link} />
 
+
      </a>
        <h2>{name}</h2>
-       {/* <h2>{product_type}</h2> */}
+       <h2>{product_type}</h2>
        <span>${price}</span>
 <div className="options">
 
@@ -87,20 +94,32 @@ setMakeup(updatedItem)
 
             {favoritesChecker(product.id) ? ( 
              <button onClick={()=> removeFromFavorites(product.id)}>
-              Remove from Favorites
+              Remove from Favorite
              </button>
  
             )  : (
                 <button onClick={()=> addToFavorites(product)}>
-                Add to Favorites
+                Add to Favorite
                 </button>
 
             )}
-        
-        
-        
-       
-</div>
+            {/* modal button */}
+            <button onClick={()=>changeContent(product)}>product description</button>
+        </div>
+        <div className="pop_up">
+            {popup.map((pop) => {
+                return(
+                    <div className="pop_container">
+                        <div className="pop_header">
+                            <button>X</button>
+                        </div>
+                        <div className="pop_content">{product.description}</div>
+
+                    </div>
+                )
+            })}
+        </div>
+
            
        
       
@@ -117,7 +136,7 @@ setMakeup(updatedItem)
 </div>
 
 
-<Footer />
+{/* <Footer /> */}
 </>
 
 

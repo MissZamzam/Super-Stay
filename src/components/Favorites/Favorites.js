@@ -1,4 +1,5 @@
 import React from "react"
+import './Favorites.css'
 import { useAppContext } from "../context/appContext"
 
 const Favorites = () => {
@@ -15,8 +16,8 @@ const favoritesChecker = (id) => {
 }
 
     return ( 
-        <div>
-                    <div className="favorite">
+        <section>
+            <div className="container">
 
             {favorites.length > 0 ? favorites.map((product) => {
          const {id, name, product_link, price, image_link} = product
@@ -59,11 +60,11 @@ const favoritesChecker = (id) => {
 
      
           );
-       }):<h1>You dont have any favorites yet</h1>}
+       }):<h1>You don't have any favorites yet 😔</h1>}
                     </div>
                     
 
-        </div>
+        </section>
      );
 }
  
