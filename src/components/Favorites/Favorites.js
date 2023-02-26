@@ -60,7 +60,7 @@ const favoritesChecker = (id) => {
 
      
           );
-       }):<h1>You don't have any favorites yet 😔</h1>}
+       }):<h3 className="dont_exist">You don't have any favorites yet 😔</h3>}
                     </div>
                     
 

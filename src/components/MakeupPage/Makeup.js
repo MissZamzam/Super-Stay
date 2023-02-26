@@ -9,7 +9,6 @@ import Modal from "../Modal/Modal"
 const Makeup = () => {
     const [makeup, setMakeup] = useState([])
     const [product_type, setProduct_type] = useState(API_URL)
-    const [popup, setPopup] = useState([])
 
 // add to favorite
 const {favorites, addToFavorites,removeFromFavorites} = useAppContext()
@@ -21,11 +20,6 @@ const favoritesChecker = (id) => {
     return boolean
 }
 
-// modal function for description
-const changeContent = (product) => {
-    setPopup([product])
-
-}
 
     useEffect(()=>{
         fetch(API_URL)
@@ -75,7 +69,7 @@ setMakeup(updatedItem)
    <div className="container">
     
        {makeup.map((product) => {
-         const {id, name, product_link, product_type, price, image_link} = product
+         const {id, name, product_link, price, image_link} = product
           return (
            
     <div class="box" key={id}>
@@ -86,7 +80,7 @@ setMakeup(updatedItem)
 
      </a>
        <h2>{name}</h2>
-       <h2>{product_type}</h2>
+       {/* <h2>{product_type}</h2> */}
        <span>${price}</span>
 <div className="options">
 
@@ -107,31 +101,10 @@ setMakeup(updatedItem)
             
             {/* modal button */}
 
-            <Modal description={product.description} />
+            <Modal name={product.name} description={product.description} />
         </div>
         
-        {/* <div className="pop_up_container">
-            <div className="pop_up_body"> 
-              <div className="pop_up_header">
-                <button>X</button>
-            </div>
-            <div className="pop_up_content">
-                {popup.map((pop)=>{
-                    return(
-                        <div className="pop_card">
-                            <img src={product.image_link} />
-                            <p>{product.description}</p>
-                        </div>
-                    )
-                })}
-            </div>
-            </div>
-          
-           
-        </div> */}
-
-       
-      
+     
        
    </div>
 

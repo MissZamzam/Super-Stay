@@ -132,9 +132,12 @@ section {
     background-color: #a78424;
     color: black;
 }
-h2{
+.dont_exist{
     width: 90%;
-    color: white;
+    color: rgb(44, 30, 30);
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
 }
 .category{
     justify-content: center;

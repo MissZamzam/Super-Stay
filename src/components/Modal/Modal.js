@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function Example(props) {
@@ -7,7 +6,7 @@ function Example(props) {
 
   return (
     <>
-                <button onClick={() => setShow(true)} >product description</button> 
+                <button onClick={() => setShow(true)} >Product Description</button> 
 
     
 
@@ -19,7 +18,7 @@ function Example(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="example-custom-modal-styling-title">
-            
+            {props.name}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
