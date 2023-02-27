@@ -5,7 +5,7 @@ const Navbar = () => {
   return ( 
 <nav>
 	<input id="nav-toggle" type="checkbox" />
-	<div class="logo">MINZ<strong>CODE</strong></div>
+	<div class="logo">Maybelline<strong></strong></div>
 	<ul class="links">
     <Link to='/'>
     		<li><a href="#home">Home</a></li>

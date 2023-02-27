@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+
 body {
 	padding: 0;
 	margin: 0;
@@ -16,10 +19,13 @@ nav {
 	left: 0;
 	right: 0;
 	top: 0;
-	font-family: 'Montserrat', sans-serif;
+  font-family: sans-serif;
 	padding: 0 5%;
 	height: 100px;
-  background-color: rgb(196, 150, 51);
+  background-color: rgb(233, 229, 220);
+  box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 12%);
+
+
 }
 nav .logo {
 	float: left;
@@ -27,8 +33,12 @@ nav .logo {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	font-size: 24px;
-	color: #fff;
+	font-size: 34px;
+	color: #a78424;
+
+  font-weight: 600;
+  font-family: Grechen Fuemen;
+
 }
 nav .links {
 	float: right;
@@ -37,7 +47,7 @@ nav .links {
 	width: 60%;
 	height: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 }
 nav .links li {
@@ -48,8 +58,9 @@ nav .links a {
 	padding: 1em;
 	font-size: 16px;
 	font-weight: bold;
-	color: #fff;
+	color: #a78424;
 	text-decoration: none;
+  
 }
 #nav-toggle {
 	position: absolute;
@@ -65,7 +76,7 @@ nav .icon-burger {
 nav .icon-burger .line {
 	width: 30px;
 	height: 5px;
-	background-color: #fff;
+	background-color: #a78424;
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;

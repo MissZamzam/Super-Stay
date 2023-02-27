@@ -67,7 +67,7 @@ section {
 }
 
 .box {
-    background-color: rgb(233, 195, 25);
+    background-color: rgb(243, 238, 210);
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -91,7 +91,7 @@ section {
 
 .box h2 {
     font-size: 20px;
-    color: black;
+    color: rgb(206, 169, 4);
 }
 
 .box p {
@@ -104,12 +104,11 @@ section {
 .box span {
     font-weight: 800;
     font-size: 18px;
+    color: rgb(100, 84, 14);
+
 }
 
-.box .rate {
-    color: #ffb900;
-    font-size: 12px;
-}
+
 
 .box .options {
     margin-bottom: 25px;
@@ -117,21 +116,20 @@ section {
 
 .box .options button {
     color: white;
-    background-color: rgb(199, 173, 24);
+    background-color: rgb(228, 212, 150);
     display: inline-block;
     padding: 14px 35px;
     text-decoration: none;
     font-weight: 600;
     font-size: 12px;
-    border-radius: 50px;
+    border-radius: 6px;
     margin: 10px;
     border: none;
 
 }
 
 .box .options button:hover {
-    background-color: #a78424;
-    color: black;
+    background-color: rgb(226, 205, 122);
 }
 h2{
     width: 90%;
@@ -154,3 +152,7 @@ float: left;
     padding: 10px;
 }
 
+.category-button{
+    background-color: rgb(199, 173, 24);
+
+}
