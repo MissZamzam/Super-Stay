@@ -48,6 +48,8 @@ setMakeup(updatedItem)
 <div className="container-fluid mx-2">
     <div className="row mt-5 mx-2">
         <div className="col-md-3">
+            <div className="container"></div>
+
             <button className="btn btn-warning w-100 mb-4" onClick={()=>setProduct_type(product_type)}>All</button>           
             <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('foundation')}>Foundation</button>
             <button className="btn btn-warning w-100 mb-4" onClick={()=>filterResult('lipstick')}>Lipstick</button>
@@ -60,11 +62,6 @@ setMakeup(updatedItem)
         </div>
         <div className="col-md-9">
         <section>
-   
-   {/* <div class="heading">
-       <h1>Maybelline Products</h1>
-     
-   </div> */}
    
    <div className="container">
     

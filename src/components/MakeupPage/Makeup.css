@@ -13,7 +13,7 @@ section {
 }
 
 .heading {
-    background-color: rgb(196, 150, 51);
+    /* background-color: rgb(196, 150, 51); */
     padding: 20px 0;
     margin-bottom: 10px;
     align-items: center;
@@ -45,7 +45,7 @@ section {
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
     gap: 35px;
-    background-color: rgb(230, 219, 210);
+    /* background-color: rgb(230, 219, 210); */
 }
 
 @media (max-width: 1200px) {

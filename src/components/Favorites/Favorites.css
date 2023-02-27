@@ -45,7 +45,7 @@ section {
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
     gap: 35px;
-    background-color: rgb(230, 219, 210);
+    /* background-color: rgb(230, 219, 210); */
 }
 
 @media (max-width: 1200px) {
