@@ -153,3 +153,24 @@ float: left;
     border: 3px solid green;
     padding: 10px;
 } */
+
+/* .dont_exist{
+    line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.center {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  } */
+  
+  
+  .dont_exist{
+    /* border: 5px solid; */
+    text-align: center;
+    padding: 180px 0;
+    font-weight: 600;
+
+  }

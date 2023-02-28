@@ -11,7 +11,7 @@ const Navbar = () => {
     		<li><a href="#home">Products</a></li>
     </Link>
     <Link to='/favorite'>
-    		<li><a href="#projects">favorites</a></li>
+    		<li><a href="#projects">Favorites</a></li>
     </Link>
 	</ul>
 	<label for="nav-toggle" class="icon-burger">
