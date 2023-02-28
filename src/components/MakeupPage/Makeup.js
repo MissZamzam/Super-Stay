@@ -79,6 +79,7 @@ setMakeup(updatedItem)
        <h2>{name}</h2>
        {/* <h2>{product_type}</h2> */}
        <span>${price}</span>
+       
 <div className="options">
 
      {/* we will remove it if its already inside our favorite array */}
