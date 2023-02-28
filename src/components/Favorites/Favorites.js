@@ -26,7 +26,7 @@ const favoritesChecker = (id) => {
     <div class="box" key={id}>
      
      <a href={product_link}>
-      <img src={image_link} />
+      <img src={image_link} alt="product image" />
 
      </a>
        <h2>{name}</h2>

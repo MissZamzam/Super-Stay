@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react"
-import Navbar from "../Navbar/Navbar"
 import './Makeup.css'
 import { API_URL } from "../API"
-import Footer from "../Footer/Footer"
 import { useAppContext } from "../context/appContext"
 import Modal from "../Modal/Modal"
 
@@ -72,7 +70,7 @@ setMakeup(updatedItem)
     <div class="box" key={id}>
      
      <a href={product_link}>
-      <img src={image_link} />
+      <img src={image_link} alt="product image"/>
 
 
      </a>
@@ -116,7 +114,6 @@ setMakeup(updatedItem)
 </div>
 
 
-{/* <Footer /> */}
 </>
 
 
