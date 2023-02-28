@@ -20,15 +20,11 @@ const favoritesChecker = (id) => {
             <div className="container">
 
             {favorites.length > 0 ? favorites.map((product) => {
-         const {id, name, product_link, price, image_link} = product
+         const {id, name, price, image_link} = product
           return (
            
     <div class="box" key={id}>
-     
-     <a href={product_link}>
-      <img src={image_link} alt="product image" />
-
-     </a>
+      <img src={image_link} />
        <h2>{name}</h2>
        {/* <h2>{product_type}</h2> */}
        <span>${price}</span>

@@ -20,7 +20,7 @@ const favoritesChecker = (id) => {
 
 
     useEffect(()=>{
-        fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
+        fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
         .then((response) => response.json())
         .then((data) =>{
             console.log(data)
@@ -70,12 +70,11 @@ setMakeup(updatedItem)
     <div class="box" key={id}>
      
      <a href={product_link}>
-      <img src={image_link} alt="product image"/>
+      <img src={image_link} />
 
 
      </a>
        <h2>{name}</h2>
-       {/* <h2>{product_type}</h2> */}
        <span>${price}</span>
        
 <div className="options">
