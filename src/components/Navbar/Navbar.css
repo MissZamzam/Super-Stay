@@ -22,7 +22,9 @@ nav {
 	font-family: sans-serif;
 	padding: 0 5%;
 	height: 100px;
-	background-color: #daa520	;
+	/* background-color: #e9bc4c	; */
+	background-color: rgb(65, 63, 48);
+
 
 	box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 12%);
 
@@ -35,7 +37,8 @@ nav .logo {
 	display: flex;
 	align-items: center;
 	font-size: 35px;
-	color: #141414;
+	color:  #e9bc4c	;
+
 
   font-weight: 600;
   font-family: Grechen Fuemen;
@@ -60,12 +63,12 @@ nav .links a {
 	font-size: 18px;
 	font-weight: bold;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	color: #77642e;
+	color:  #e9bc4c	;
 	text-decoration: none;
   
 }
 nav .links a:hover{
-	color: rgb(73, 67, 40);
+	color: rgb(150, 129, 26);
 	text-decoration: overline;
 }
 #nav-toggle {
