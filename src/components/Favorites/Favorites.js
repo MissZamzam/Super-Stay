@@ -20,7 +20,7 @@ const favoritesChecker = (id) => {
             <div className="container">
 
             {favorites.length > 0 ? favorites.map((product) => {
-         const {id, name, price, image_link} = product
+            const {id, name, price, image_link} = product
           return (
            
     <div class="box" key={id}>
@@ -28,7 +28,7 @@ const favoritesChecker = (id) => {
        <h2>{name}</h2>
        {/* <h2>{product_type}</h2> */}
        <span>${price}</span>
-<div className="options">
+    <div className="options">
 
      {/* we will remove it if its already inside our favorite array */}
 
