@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 import './Makeup.css'
-import { API_URL } from "../API"
+// import { API_URL } from "../API"
 import { useAppContext } from "../context/appContext"
 import Modal from "../Modal/Modal"
 
 const Makeup = () => {
     const [makeup, setMakeup] = useState([])
-    const [product_type, setProduct_type] = useState(API_URL)
+    const [product_type, setProduct_type] = useState()
 
 // add to favorite
 const {favorites, addToFavorites,removeFromFavorites} = useAppContext()
@@ -20,7 +20,7 @@ const favoritesChecker = (id) => {
 
 
     useEffect(()=>{
-        fetch(API_URL)
+        fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
         .then((response) => response.json())
         .then((data) =>{
             console.log(data)
