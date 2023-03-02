@@ -7,7 +7,7 @@ const Navbar = () => {
 	<input id="nav-toggle" type="checkbox" />
 	<div class="logo">Maybelline<strong></strong></div>
 	<ul class="links">
-    <Link to='/'>
+    <Link to='/product'>
     		<li><a href="#home">Products</a></li>
     </Link>
     <Link to='/favorite'>

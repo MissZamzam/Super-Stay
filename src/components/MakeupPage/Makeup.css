@@ -93,14 +93,13 @@ section {
 
 .box h2 {
     font-size: 20px;
-    color: rgb(175, 153, 55);
+    color: rgb(156, 139, 62);
 }
 
 .box p {
     padding: 0 20px;
     font-size: 12.5px;
     line-height: 1.35;
-    color: var(--gray-color);
 }
 
 .box span {
@@ -126,7 +125,7 @@ section {
     font-size: 12px;
     border-radius: 6px;
     margin: 10px;
-    border: 1px solid rgb(214, 191, 99);
+    border: 1px solid rgb(85, 79, 54);
 
 }
 
