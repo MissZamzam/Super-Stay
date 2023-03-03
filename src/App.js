@@ -3,6 +3,7 @@ import Makeup from "./components/MakeupPage/Makeup";
 import Navbar from "./components/Navbar/Navbar";
 import Favorites from './components/Favorites/Favorites';
 import MakeupDetails from './components/Modal/Modal';
+import Home from './components/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -11,7 +12,8 @@ function App() {
     <div className="App">
       <Navbar />
     <Routes>
-      <Route path='/makeup' element={<Makeup />}/>
+      <Route path='/' element={<Home />}/>
+      <Route path='/product' element={<Makeup />}/>
       <Route path='/navbar' element={<Navbar />} />
       <Route path='/favorite' element={<Favorites />} />
       <Route path='/product/:id' element={<MakeupDetails />} />
