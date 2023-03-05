@@ -71,7 +71,7 @@ const Home = () => (
     </ul>
   </section>
 
-  <section class="testimonials">
+  {/* <section class="testimonials">
     <h3 class="title">Testimonials from our adventurers:</h3>
     <hr></hr>
     <p class="quote">Wow! This tour made me realize how much I love being outside with my friends. After going on one of these tours, I can safely say that beer pong is my favorite game all time, also the cultural programs were really interesting!</p>
@@ -80,7 +80,7 @@ const Home = () => (
     <p class="author">- Sharon Rosenberg</p>
     <p class="quote">If you want to understand your friends better, head to the mountains. I mean, seriously. It's like sitting next to a campfire and just talk in the sunset, woah. You know? It's like that.</p>
     <p class="author">- Luis Mendoza</p>
-  </section>
+  </section> */}
 
   {/* <section class="contact">
     <h3 class="title">Learn more</h3>
