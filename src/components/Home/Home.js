@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => (
-  <div className="app__header app__wrapper section__padding" id="home">
+  <div className="home">
   {/* <header>
     <h2><a href="#">Life is a party!</a></h2>
     <nav>
@@ -19,8 +19,8 @@ const Home = () => (
   <section class="hero">
     <div class="background-image"></div>
     <div class="hero-content-area">
-      <h1>Life is a party!</h1>
-      <h3>Unmissable Adventure Tours With Your Friends</h3>
+      <h1>Super Stay App!</h1>
+      <h3>Unmissable Adventure with Maybelline Makeup Collection</h3>
   <Link to='./product'>
         <a href="#" class="btn">Maybelline</a>
 
@@ -29,9 +29,9 @@ const Home = () => (
     </div>
   </section>
 
-  <section class="destinations">
+  {/* <section class="destinations">
     <h3 class="title">Some of our products:</h3>
-    <p>Tired of getting all Maybelline products in one place? Do you struggle with budgeting?Do you want to know how each product is rated globally? Come along with us on one of our unusual adventures of discovering Maybelline collections. Here are some pictures from people who have had elevated experiences with us.</p>
+    <p>Tired of getting all Maybelline products in one place? Do you struggle with budgeting?Do you want to know how each product is rated globally? Come along with us on one of our unusual adventures of discovering Maybelline collections.</p>
     <hr></hr>
 
     <ul class="grid">
@@ -40,23 +40,23 @@ const Home = () => (
       <li class="large image-3"></li>
       <li class="small image-4"></li>
     </ul>
-  </section>
+  </section> */}
 
   <section class="packages">
-    <h3 class="title">Why This App</h3>
-    <p>We offer a variety of group (minimum 5 people) packages. Whether you've spent some summers together or this might be your first adventure, we've got the perfect vacation for you.</p>
+    <h3 class="title">Why Super Stay App</h3>
+    <p>Tired of getting all Maybelline products in one place? Do you struggle with budgeting?Do you want to know how each product is rated globally? Come along with us on one of our unusual adventures of discovering Maybelline collections.</p>
     <hr></hr>
 
     <ul class="grid">
       <li>
         <i class="fa fa-compass fa-4x"></i>
-        <h4>Knowledge</h4>
-        <p>Looking for the complete experience? Take a tour with one of our experts. They'll show you secrets that you're likely to miss otherwise.</p>
+        <h4>Product Knowledge</h4>
+        <p>Looking for the complete product description before purchasing? Click on the product description button and get all the information regarding the product.You will learn secrets that you're likely to miss otherwise.</p>
       </li>
       <li>
         <i class="fa fa-camera-retro fa-4x"></i>
-        <h4>Ratings</h4>
-        <p>Want to experience nature's beauty without all of that annoying exercise? Take a photo tour on one of our <em>Life is a party!</em> buses.</p>
+        <h4>Global Ratings</h4>
+        <p>Want to experience the most rated Maybelline products without going through all the annoying searching exercise? <em>Super Stay App</em> provides the real global rating of each Maybelline product.</p>
       </li>
       <li>
         <i class="fa fa-bicycle fa-4x"></i>
@@ -65,7 +65,7 @@ const Home = () => (
       </li>
       <li>
         <i class="fa fa-flag-checkered fa-4x"></i>
-        <h4>Racing Trips</h4>
+        <h4>Favorite Page</h4>
         <p>Got a competitive spirit? Sign up for one of our challenge-based marathons! Try to reach the summit before any other group.</p>
       </li>
     </ul>
@@ -82,7 +82,7 @@ const Home = () => (
     <p class="author">- Luis Mendoza</p>
   </section>
 
-  <section class="contact">
+  {/* <section class="contact">
     <h3 class="title">Learn more</h3>
     <p>Want to know about our upcoming events, or come to one of our mixers? Just sign up for our mailing list. No spam from us, we promise! Except for the spam we give you to keep up your energy while you're having fun with your friends. Have a blast! We have tons of that.</p>
     <hr></hr>
@@ -90,7 +90,7 @@ const Home = () => (
       <input type="email" placeholder="Email" />
       <a href="#" class="btn">Subscribe now</a>
     </form>
-  </section>
+  </section> */}
 
   <footer>
     <p>Images courtesy of <a href="http://unsplash.com/">unsplash</a>.</p>

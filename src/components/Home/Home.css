@@ -16,6 +16,9 @@
 nav {
 	list-style: none;
 } */
+.home{
+  background-color: #ce5856;
+}
 
 a {
 	text-decoration: none;
@@ -32,13 +35,16 @@ a.btn {
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
-	background-color: #e07e7b;
+	background-color: rgb(175, 153, 55);
+  color: wheat;
 	opacity: 1;
 	transition: all 400ms;
 }
 
 a.btn:hover {
-	background-color: #ce5856;
+	background-color: rgb(139, 124, 53);
+  
+  color: white;
 }
 
 section {
@@ -106,7 +112,7 @@ section p {
 
 /*Header Styles*/
 
-header {
+/* header {
 	position: absolute;
 	width: 100%;
 	display: flex;
@@ -117,15 +123,15 @@ header {
 	opacity: 0;
 	color: #fff;
 	z-index: 2;
-}
+} */
 
-@keyframes fadein {
+/* @keyframes fadein {
 	100% {
 		opacity: 1;
 	}
-}
+} */
 
-header h2 {
+/* header h2 {
 	font-family: "Amatic SC", sans-serif;
 }
 
@@ -136,7 +142,7 @@ header nav {
 
 header nav li {
 	margin: 0 15px;
-}
+} */
 
 @media (max-width: 800px) {
 	header {
