@@ -9,7 +9,7 @@
 }
 
 section {
-    background-color: #fff;
+    background-color: #eee8e8;
 }
 
 .heading {
@@ -67,7 +67,7 @@ section {
 }
 
 .box {
-    background-color: rgb(231, 230, 205);
+    background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -116,22 +116,21 @@ section {
 }
 
 .box .options button {
-    color: rgb(175, 153, 55);
-    background-color: rgb(34, 34, 32);
+    color: black;
+    background-color: #ffd700	;
     display: inline-block;
-    padding: 14px 35px;
+    padding:14px 35px;
     text-decoration: none;
-    /* font-weight: 600; */
-    font-size: 12px;
-    border-radius: 6px;
+    font-size: 13px;
+    border-radius: 5px;
     margin: 10px;
-    border: 1px solid rgb(85, 79, 54);
+    border: none;
 
 }
 
 .box .options button:hover {
-    background-color: rgb(44, 42, 34);
-    color: rgb(193, 196, 29);
+    background-color: rgb(230, 190, 32);
+    color: rgb(29, 29, 27);
 }
 h2{
     width: 90%;

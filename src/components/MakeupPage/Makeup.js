@@ -3,6 +3,8 @@ import './Makeup.css'
 // import { API_URL } from "../API"
 import { useAppContext } from "../context/appContext"
 import Modal from "../Modal/Modal"
+import ReactReadMoreReadLess from "react-read-more-read-less";
+
 
 const Makeup = () => {
     const [makeup, setMakeup] = useState([])
@@ -74,7 +76,19 @@ setMakeup(updatedItem)
 
 
      </a>
-       <h2>{name}</h2>
+<h2>
+
+
+     <ReactReadMoreReadLess
+                    charLimit={22}
+                    readMoreText={"▼"}
+                    readLessText={"▲"}
+                    style={{"color": "blue"}}
+                    >
+                    {name}
+                </ReactReadMoreReadLess>
+                    
+       </h2>
        <span>${price}</span>
        
 <div className="options">

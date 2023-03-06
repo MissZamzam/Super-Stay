@@ -1,6 +1,8 @@
 import React from "react"
 import './Favorites.css'
 import { useAppContext } from "../context/appContext"
+import ReactReadMoreReadLess from "react-read-more-read-less";
+
 
 const Favorites = () => {
 
@@ -25,8 +27,19 @@ const favoritesChecker = (id) => {
            
     <div class="box" key={id}>
       <img src={image_link} />
-       <h2>{name}</h2>
-       {/* <h2>{product_type}</h2> */}
+      <h2>
+
+
+<ReactReadMoreReadLess
+               charLimit={22}
+               readMoreText={"▼"}
+               readLessText={"▲"}
+               style={{"color": "blue"}}
+               >
+               {name}
+           </ReactReadMoreReadLess>
+               
+  </h2>       {/* <h2>{product_type}</h2> */}
        <span>${price}</span>
     <div className="options">
 

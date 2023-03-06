@@ -5,13 +5,11 @@ const Navbar = () => {
   return ( 
 <nav>
 	<input id="nav-toggle" type="checkbox" />
-	<div class="logo">Maybelline<strong></strong></div>
+	<div class="logo">SuperStay<strong></strong></div>
 	<ul class="links">
 
-	<Link to='/'>
-    		<li><a href="#home">Home</a></li>
-    </Link>
-    <Link to='/product'>
+
+    <Link to='/'>
     		<li><a href="#home">Products</a></li>
     </Link>
     <Link to='/favorite'>
@@ -21,7 +19,7 @@ const Navbar = () => {
 	<label for="nav-toggle" class="icon-burger">
 		<div class="line"></div>
 		<div class="line"></div>
-		{/* <div class="line"></div> */}
+		<div class="line"></div>
 	</label>
 </nav>
 
