@@ -63,13 +63,13 @@ nav .links a {
 	font-size: 18px;
 	font-weight: bold;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	color: rgb(53, 48, 6);
+    color: rgb(170, 138, 33);
 
 	text-decoration: none;
   
 }
 nav .links a:hover{
-	color: rgb(150, 129, 26);
+    color: rgb(207, 189, 128);
 	text-decoration: overline;
 }
 #nav-toggle {

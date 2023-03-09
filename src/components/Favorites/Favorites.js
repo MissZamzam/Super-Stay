@@ -70,7 +70,7 @@ const favoritesChecker = (id) => {
 
      
           );
-       }):<h3 className="dont_exist">You don't have any favorites yet😔 <br></br>Add some of your favourite Maybelline products
+       }):<h3 className="dont_exist">You don't have any favorites yet <br></br>Add some of your favourite Maybelline products
        </h3>
        
        }

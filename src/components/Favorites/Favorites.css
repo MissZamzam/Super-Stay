@@ -171,6 +171,7 @@ float: left;
     /* border: 5px solid; */
     text-align: center;
     padding: 180px 0;
-    font-weight: 600;
+    /* font-weight: 600; */
+    color: black;
 
   }
