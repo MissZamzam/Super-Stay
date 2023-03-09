@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import './Makeup.css'
+import StarRating from "../StartRating/Starrating"
+
 // import { API_URL } from "../API"
 import { useAppContext } from "../context/appContext"
 import Modal from "../Modal/Modal"
@@ -66,7 +68,7 @@ setMakeup(updatedItem)
    <div className="container">
     
        {makeup.map((product) => {
-         const {id, name, product_link, price, image_link} = product
+         const {id, name, product_link, price,rating, image_link} = product
           return (
            
     <div class="box" key={id}>
@@ -76,6 +78,7 @@ setMakeup(updatedItem)
 
 
      </a>
+
 <h2>
 
 
@@ -89,6 +92,8 @@ setMakeup(updatedItem)
                 </ReactReadMoreReadLess>
                     
        </h2>
+       <StarRating rating={rating} />
+
        <span>${price}</span>
        
 <div className="options">
