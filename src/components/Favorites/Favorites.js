@@ -2,7 +2,7 @@ import React from "react"
 import './Favorites.css'
 import { useAppContext } from "../context/appContext"
 import ReactReadMoreReadLess from "react-read-more-read-less";
-
+import StarRating from "../StartRating/Starrating";
 
 const Favorites = () => {
 
@@ -22,7 +22,7 @@ const favoritesChecker = (id) => {
             <div className="container">
 
             {favorites.length > 0 ? favorites.map((product) => {
-            const {id, name, price, image_link} = product
+            const {id, name, price, image_link,rating} = product
           return (
            
     <div class="box" key={id}>
@@ -30,7 +30,7 @@ const favoritesChecker = (id) => {
       <h2>
 
 
-<ReactReadMoreReadLess
+            <ReactReadMoreReadLess
                charLimit={22}
                readMoreText={"▼"}
                readLessText={"▲"}
@@ -41,6 +41,7 @@ const favoritesChecker = (id) => {
                
   </h2>       {/* <h2>{product_type}</h2> */}
        <span>${price}</span>
+       <StarRating rating={rating} />
     <div className="options">
 
      {/* we will remove it if its already inside our favorite array */}
