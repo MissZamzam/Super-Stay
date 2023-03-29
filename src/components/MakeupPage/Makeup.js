@@ -7,16 +7,8 @@ import ReactReadMoreReadLess from "react-read-more-read-less";
 
 const Makeup = () => {
   const [makeup, setMakeup] = useState([]);
-  const [product_type, setProduct_type] = useState();
+  const [product_type, setProduct_type] = useState([]);
 
-  // add to favorite
-  const { favorites, addToFavorites, removeFromFavorites } = useAppContext();
-  console.log("favorites are ", favorites);
-
-  const favoritesChecker = (id) => {
-    const boolean = favorites.some((makeup) => makeup.id === id);
-    return boolean;
-  };
 
   useEffect(() => {
     fetch(
@@ -30,13 +22,27 @@ const Makeup = () => {
       });
   }, []);
 
-  //filter method
-  const filterResult = (categoryItem) => {
+
+  // add to favorite
+  const { favorites, addToFavorites, removeFromFavorites } = useAppContext();
+  console.log("favorites are ", favorites);
+
+  const favoritesChecker = (id) => {
+    const boolean = favorites.some((makeup) => makeup.id === id);
+    return boolean;
+  };
+
+ //filter method
+ const filterResult = (categoryItem) => {
+  if (categoryItem === "All") {
+    setMakeup(product_type);
+  } else {
     const updatedItem = product_type.filter((currentData) => {
       return currentData.product_type === categoryItem;
     });
     setMakeup(updatedItem);
-  };
+  }
+};
 
   return (
     <>
@@ -48,7 +54,7 @@ const Makeup = () => {
 
             <button
               className="btn btn-warning w-100 mb-4 btn-active"
-              onClick={() => setProduct_type(product_type)}
+              onClick={() => filterResult("All")}
             >
               All
             </button>
