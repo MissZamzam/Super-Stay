@@ -6,11 +6,9 @@ function Example(props) {
 
   return (
     <>
-                <button onClick={() => setShow(true)} >Product Description</button> 
+     <button onClick={() => setShow(true)} >Product Description</button> 
 
-    
-
-      <Modal
+    <Modal
         show={show}
         onHide={() => setShow(false)}
         dialogClassName="modal-90w"

@@ -2,6 +2,12 @@ import './Navbar.css'
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+
+
+
+
+
   return ( 
 <nav>
 	<input id="nav-toggle" type="checkbox" />
@@ -15,6 +21,7 @@ const Navbar = () => {
     <Link to='/favorite'>
     		<li><a href="#projects">Favorites</a></li>
     </Link>
+
 	</ul>
 	<label for="nav-toggle" class="icon-burger">
 		<div class="line"></div>
