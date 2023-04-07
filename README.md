@@ -43,16 +43,5 @@ Users can view a detailed product description by clicking the "Product Dscriptio
 ## Deployment
 Super-Stay is deployed on Vercel, a cloud platform for serverless deployment. Vercel makes it easy to deploy and manage React applications, with features like automatic scaling, SSL encryption, and continuous deployment.
 
-To deploy this project on Vercel, we followed these steps:
 
-Created an account on Vercel (https://vercel.com/).
-
-Connected our GitHub account to Vercel.
-
-Created a new project on Vercel and linked it to the GitHub repository for the Super-Stay project.
-
-Configured the project settings on Vercel, including environment variables, build settings, and custom domains.
-
-Deployed the project by pushing changes to the GitHub repository. Vercel automatically detects changes and triggers a new build and deployment.
-
-By deploying the Super-Stay project on Vercel, we were able to make it publicly accessible and shareable with others. You can access the live version of the Super-Stay application at https://super-stay.vercel.app/.
+By deploying the Super-Stay project on Vercel,I was able to make it publicly accessible and shareable with others. You can access the live version of the Super-Stay application at https://super-stay.vercel.app/.
