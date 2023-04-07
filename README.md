@@ -1,72 +1,58 @@
-# Getting Started with Create React App
+# Super-Stay
+Super-Stay is a React web application that displays all the Maybelline products using the Maybelline Makeup API. The application allows users to filter products by category, add products to their favorites, and view a popup modal with a detailed product description.
 
+## Installation
+To run the Super-Stay application locally, follow these steps:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Clone the repository to your local machine:
 
-## Available Scripts
+    git clone https://github.com/your-username/super-stay.git
 
-In the project directory, you can run:
+2. Install the dependencies:
 
-### `npm start`
+    cd super-stay
+    
+    npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Start the development server:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    npm start
+    
+4. Open the application in your browser at http://localhost:3000.
 
-### `npm test`
+## Technologies
+Super-Stay is built using the following technologies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React.js
+Maybelline Makeup API
+plain CSS
+Bootstrap
 
-### `npm run build`
+## Features
+Super-Stay includes the following features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Filter by Category:  
+Users can filter products by category using the buttons on the home page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Add to Favorites:
+Users can add products to their favorites list by clicking the favorite button on the product card.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Popup Modal: 
+Users can view a detailed product description by clicking the "Product Dscription" button on the product card. The product description is displayed in a popup modal.
 
-### `npm run eject`
+## Deployment
+Super-Stay is deployed on Vercel, a cloud platform for serverless deployment. Vercel makes it easy to deploy and manage React applications, with features like automatic scaling, SSL encryption, and continuous deployment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To deploy this project on Vercel, we followed these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Created an account on Vercel (https://vercel.com/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Connected our GitHub account to Vercel.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Created a new project on Vercel and linked it to the GitHub repository for the Super-Stay project.
 
-## Learn More
+Configured the project settings on Vercel, including environment variables, build settings, and custom domains.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Deployed the project by pushing changes to the GitHub repository. Vercel automatically detects changes and triggers a new build and deployment.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here:
-The project is deployed on vercel
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By deploying the Super-Stay project on Vercel, we were able to make it publicly accessible and shareable with others. You can access the live version of the Super-Stay application at https://super-stay.vercel.app/.
