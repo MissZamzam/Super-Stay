@@ -1,5 +1,6 @@
 # Super-Stay
-Super-Stay is a React web application that displays all the Maybelline products using the Maybelline Makeup API. The application allows users to filter products by category, add products to their favorites, and view a popup modal with a detailed product description.
+Super-Stay is a React-based web application that leverages the Maybelline Makeup API to showcase the complete range of Maybelline products. With the capability to filter products by category, favorite any product, and view detailed descriptions in a popup modal, users can have a seamless experience. Additionally, Super-Stay is designed with responsiveness in mind, ensuring that the application is accessible across various screen sizes and devices.
+
 
 ## Installation
 To run the Super-Stay application locally, follow these steps:
