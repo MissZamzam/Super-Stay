@@ -1,30 +1,9 @@
-
 * {
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1;
     padding: 0;
     margin: 0;
-
-
-}
-
-
-.heading {
-    padding: 20px 0;
-    margin-bottom: 10px;
-    align-items: center;
-}
-
-.heading h1 {
-    margin: auto;
-    width: fit-content;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: white;
-    background-color: rgb(14, 13, 13);
-    border-radius: 50%;
-    padding: 30px 30px;
 }
 
 @media (max-width: 768px) {
@@ -37,12 +16,10 @@
     width: 1280px;
     padding: 15px;
     margin-left: auto;
-    /* margin-right: auto; */
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
     gap: 35px;
-    /* background-color: rgb(230, 219, 210); */
 }
 
 @media (max-width: 1200px) {
@@ -73,10 +50,9 @@
     gap: 10px;
     border: 1px solid rgb(194, 179, 105);
     border-radius: 25px;
-    box-shadow: 17px 17px 34px 0px rgb(134, 134, 124), 
-      inset -8px -8px 16px 0px rgba(133, 133, 117, 0.7), 
-      inset 0px 14px 28px 0px hsl(120deg 20% 95%);
-
+    box-shadow: 17px 17px 34px 0px rgb(131, 131, 103), 
+      inset -8px -8px 16px 0px rgba(160, 160, 148, 0.7), 
+      inset 0px 14px 28px 0px hsl(51, 19%, 93%);
 }
 
 .box img {
@@ -105,79 +81,28 @@
     font-weight: 800;
     font-size: 18px;
     color: rgb(167, 160, 131);
-
 }
-
-
 
 .box .options {
     margin-top: 30px;
-
     margin-bottom: 25px;
 }
 
 .box .options button {
-    /* color: rgb(255, 253, 253); */
     background-color: #d4b663;
-
     display: inline-block;
-    padding:14px 35px;
+    padding: 14px 35px;
     text-decoration: none;
     font-size: 13px;
     border-radius: 5px;
     margin: 10px;
     border: none;
     box-shadow: 4px 4px 8px 0px rgb(134, 124, 124), 
-    inset -8px -8px 16px 0px #FFC72C, 
-    inset 0px 14px 28px 0px #FFC72C;
-
-
+      inset -8px -8px 16px 0px #FFC72C, 
+      inset 0px 14px 28px 0px #FFC72C;
 }
 
 .box .options button:hover {
     background-color: #d1ac44;
     color: rgb(29, 29, 27);
-    
 }
-h2{
-    width: 90%;
-    color: white;
-}
-.category{
-    justify-content: center;
-}
-.category button{
-margin: 10px;
-padding: 10px;
-border-radius: 5px;
-border: navajowhite;
-cursor: pointer;
-}
-.select{
-float: left;  
- width: 150%;
-    border: 3px solid green;
-    padding: 10px;
-}
-
-.category-button{
-    background-color: rgb(199, 173, 24);
-
-
-}
-.text-block {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: black;
-    color: rgb(230, 38, 38);
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius:50%;
-    z-index: -1;
-    
-  }
-  /* button{
-    background-color: rgb(170, 138, 33);
-
-  } */
