@@ -31,6 +31,7 @@ const Makeup = () => {
     const boolean = favorites.some((makeup) => makeup.id === id);
     return boolean;
   };
+  
 
  //filter method
  const filterResult = (categoryItem) => {
