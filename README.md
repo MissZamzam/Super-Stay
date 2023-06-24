@@ -1,72 +1,48 @@
-# Getting Started with Create React App
+# Super-Stay
+Super-Stay is a React-based web application that leverages the Maybelline Makeup API to showcase the complete range of Maybelline products. With the capability to filter products by category, favorite any product, and view detailed descriptions in a popup modal, users can have a seamless experience. Additionally, Super-Stay is designed with responsiveness in mind, ensuring that the application is accessible across various screen sizes and devices.
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+To run the Super-Stay application locally, follow these steps:
 
-## Available Scripts
+1. Clone the repository to your local machine:
 
-In the project directory, you can run:
+    git clone https://github.com/your-username/super-stay.git
 
-### `npm start`
+2. Install the dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    cd super-stay
+    
+    npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Start the development server:
 
-### `npm test`
+    npm start
+    
+4. Open the application in your browser at http://localhost:3000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
+Super-Stay is built using the following technologies:
 
-### `npm run build`
+React.js
+Maybelline Makeup API
+plain CSS
+Bootstrap
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
+Super-Stay includes the following features:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Filter by Category:  
+Users can filter products by category using the buttons on the home page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Add to Favorites:
+Users can add products to their favorites list by clicking the favorite button on the product card.
 
-### `npm run eject`
+### Popup Modal: 
+Users can view a detailed product description by clicking the "Product Dscription" button on the product card. The product description is displayed in a popup modal.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment
+Super-Stay is deployed on Vercel, a cloud platform for serverless deployment. Vercel makes it easy to deploy and manage React applications, with features like automatic scaling, SSL encryption, and continuous deployment.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here:
-The project is deployed on vercel
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By deploying the Super-Stay project on Vercel,I was able to make it publicly accessible and shareable with others. You can access the live version of the Super-Stay application at https://super-stay.vercel.app/.
