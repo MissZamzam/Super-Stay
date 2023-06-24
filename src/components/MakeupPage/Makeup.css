@@ -9,7 +9,7 @@
 }
 
 section {
-    background-color: #faf6f6;
+    /* background-color: #c03838; */
 }
 
 .heading {
@@ -79,7 +79,6 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     border: 1px solid rgb(214, 204, 147);
     border-radius: 25px;
-    /* background-color: hsl(120deg 20% 95%); */
     box-shadow: 17px 17px 34px 0px rgb(134, 134, 124), 
       inset -8px -8px 16px 0px rgba(133, 133, 117, 0.7), 
       inset 0px 14px 28px 0px hsl(120deg 20% 95%);
@@ -125,7 +124,7 @@ section {
 
 .box .options button {
     /* color: rgb(255, 253, 253); */
-    background-color: rgb(230, 190, 32);
+    background-color: #FFC72C;
 
     display: inline-block;
     padding:14px 35px;
@@ -135,14 +134,14 @@ section {
     margin: 10px;
     border: none;
     box-shadow: 4px 4px 8px 0px rgb(134, 124, 124), 
-    inset -8px -8px 16px 0px rgba(92, 92, 92, 0.7), 
-    inset 0px 14px 28px 0px hsl(120deg 20% 95%);
+    inset -8px -8px 16px 0px #FFC72C, 
+    inset 0px 14px 28px 0px #FFC72C;
 
 
 }
 
 .box .options button:hover {
-    background-color: rgb(170, 138, 33);
+    background-color: #d6a41b;
     color: rgb(29, 29, 27);
     
 }
