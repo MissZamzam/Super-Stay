@@ -6,12 +6,6 @@
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .heading h1 {
-        font-size: 21px;
-    }
-}
-
 .container {
     width: 1280px;
     padding: 15px;
@@ -20,24 +14,6 @@
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(250px, auto));
     gap: 35px;
-}
-
-@media (max-width: 1200px) {
-    .container {
-        width: 1000px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
 }
 
 .box {
@@ -63,7 +39,6 @@
 
 .box img:hover {
     cursor: pointer;
-    opacity: 0.95;
 }
 
 .box h2 {
@@ -71,11 +46,7 @@
     color: rgb(156, 139, 62);
 }
 
-.box p {
-    padding: 0 20px;
-    font-size: 12.5px;
-    line-height: 1.35;
-}
+
 
 .box span {
     font-weight: 800;
@@ -84,25 +55,95 @@
 }
 
 .box .options {
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 3px;
+    margin-bottom: 15px;
 }
 
 .box .options button {
-    background-color: #d4b663;
+    background-color: transparent;
     display: inline-block;
-    padding: 14px 35px;
+    padding: 14px 15px;
     text-decoration: none;
     font-size: 13px;
-    border-radius: 5px;
+    border-radius: 50%;
     margin: 10px;
-    border: none;
-    box-shadow: 4px 4px 8px 0px rgb(134, 124, 124), 
-      inset -8px -8px 16px 0px #FFC72C, 
-      inset 0px 14px 28px 0px #FFC72C;
+    border: 1px solid #d4b663;
+    color: rgb(129, 101, 39);
 }
 
 .box .options button:hover {
-    background-color: #d1ac44;
+    background-color: #dbd9d1;
     color: rgb(29, 29, 27);
+}
+
+
+
+/* Media queries for responsive design */
+
+/* Tablets */
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .box {
+        border-radius: 15px;
+        box-shadow: 10px 10px 20px 0px rgb(131, 131, 103), 
+          inset -5px -5px 10px 0px rgba(160, 160, 148, 0.7), 
+          inset 0px 7px 14px 0px hsl(51, 19%, 93%);
+    }
+
+    .box img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box h2 {
+        font-size: 18px;
+    }
+
+    .box span {
+        font-size: 16px;
+    }
+
+    .box .options button {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .box {
+        border-radius: 10px;
+        box-shadow: 8px 8px 16px 0px rgb(131, 131, 103), 
+          inset -4px -4px 8px 0px rgba(160, 160, 148, 0.7), 
+          inset 0px 5px 10px 0px hsl(51, 19%, 93%);
+    }
+
+    .box img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box h2 {
+        font-size: 16px;
+    }
+
+    .box span {
+        font-size: 14px;
+    }
+
+    .box .options button {
+        padding: 8px;
+        font-size: 10px;
+    }
 }

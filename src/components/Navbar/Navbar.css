@@ -37,7 +37,7 @@ nav .logo {
 	display: flex;
 	align-items: center;
 	font-size: 35px;
-	color:  #947b3d	;
+	color:  #c0900d	;
 
 
   font-weight: 600;
@@ -63,7 +63,7 @@ nav .links a {
 	font-size: 18px;
 	font-weight: bold;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(170, 138, 33);
+    color: rgb(192, 156, 37);
 
 	text-decoration: none;
   
@@ -91,6 +91,7 @@ nav .icon-burger .line {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
+
 @media screen and (max-width: 768px) {
 	nav .logo {
 		float: none;
@@ -135,11 +136,3 @@ nav .icon-burger .line {
 	
 }
 
-.youtube-link {
-	position: fixed;
-	left: 20px;
-	bottom: 20px;
-	color: #000;
-	text-decoration: none;
-	font-size: 12px;
-}
