@@ -145,7 +145,7 @@ const Makeup = () => {
                           </button>
                         ) : (
                           <button onClick={() => addToFavorites(product)}>
-                            Add to Favorite ....
+                            Add to Favorite
                           </button>
                         )}
 
