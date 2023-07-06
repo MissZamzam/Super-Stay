@@ -18,7 +18,8 @@ Install the dependencies:
 
 Start the development server:
 
-To run the server, use the command `npm start`.
+   `npm start`
+
     
 Open the application in your browser at http://localhost:3000.
 
