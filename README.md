@@ -14,7 +14,8 @@ Install the dependencies:
 
     cd super-stay
     
-    npm install
+    `npm install`
+    
 
 Start the development server:
 
