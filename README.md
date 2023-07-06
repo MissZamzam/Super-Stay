@@ -14,13 +14,11 @@ Install the dependencies:
 
     cd super-stay
     
-    `npm install`
-    
+    npm install
 
 Start the development server:
 
-   `npm start`
-
+    npm start
     
 Open the application in your browser at http://localhost:3000.
 
