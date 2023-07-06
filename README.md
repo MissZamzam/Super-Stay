@@ -1,27 +1,26 @@
 # Super-Stay
 Super-Stay is a React-based web application that leverages the Maybelline Makeup API from Mixed Analytics to showcase the complete range of Maybelline products. With the capability to filter products by category, favorite any product, and view detailed descriptions in a popup modal, users can have a seamless experience. Additionally, Super-Stay is designed with responsiveness in mind, ensuring that the application is accessible across various screen sizes and devices.
-Check the live [demo][https://super-stay.vercel.app/] here.
 
 
 
 ## Installation
 To run the Super-Stay application locally, follow these steps:
 
-1. Clone the repository to your local machine:
+Clone the repository to your local machine:
 
     git clone https://github.com/your-username/super-stay.git
 
-2. Install the dependencies:
+Install the dependencies:
 
     cd super-stay
     
     npm install
 
-3. Start the development server:
+Start the development server:
 
-    npm start
+To run the server, use the command `npm start`.
     
-4. Open the application in your browser at http://localhost:3000.
+Open the application in your browser at http://localhost:3000.
 
 ## Technologies
 Super-Stay is built using the following technologies:
