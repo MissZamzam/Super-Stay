@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Favorites from './components/Favorites/Favorites';
 import MakeupDetails from './components/Modal/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Trial from './components/Trial/Trial';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route path='/' element={<Makeup />}/>
       <Route path='/navbar' element={<Navbar />} />
       <Route path='/favorite' element={<Favorites />} />
+      <Route path='/trial' element={<Trial />} />
       <Route path='/product/:id' element={<MakeupDetails />} />
 
 

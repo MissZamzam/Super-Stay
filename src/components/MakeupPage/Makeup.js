@@ -117,6 +117,8 @@ const Makeup = () => {
                   return (
                     <div class="box" key={id}>
                       <a href={product_link}>
+                      {/* <a href="#" class="btn-floating btn-large price waves-effect waves-light brown darken-3">5 €</a> */}
+
                         <img src={image_link} />
                       </a>
 

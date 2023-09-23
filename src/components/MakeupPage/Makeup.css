@@ -25,7 +25,7 @@
     text-align: center;
     gap: 10px;
     border: 1px solid rgb(194, 179, 105);
-    border-radius: 25px;
+    /* border-radius: 25px; */
     box-shadow: 17px 17px 34px 0px rgb(131, 131, 103), 
       inset -8px -8px 16px 0px rgba(160, 160, 148, 0.7), 
       inset 0px 14px 28px 0px hsl(51, 19%, 93%);
@@ -89,7 +89,7 @@
     }
 
     .box {
-        border-radius: 15px;
+        /* border-radius: 15px; */
         box-shadow: 10px 10px 20px 0px rgb(131, 131, 103), 
           inset -5px -5px 10px 0px rgba(160, 160, 148, 0.7), 
           inset 0px 7px 14px 0px hsl(51, 19%, 93%);
